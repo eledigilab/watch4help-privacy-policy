@@ -23,7 +23,7 @@
 <body>
 
 <h1>AIuto SOS — watch4help · Informativa sulla Privacy</h1>
-<p class="updated">Ultimo aggiornamento: 22 giugno 2026</p>
+<p class="updated">Ultimo aggiornamento: 11 luglio 2026</p>
 
 <p>Benvenuto/a nell'app di emergenza personale <strong>"AIuto SOS — watch4help"</strong> (di seguito, l'"App"), applicazione <strong>autonoma per smartwatch Wear OS</strong>. La tua privacy e la sicurezza dei tuoi dati sono la nostra massima priorità. La presente informativa descrive le modalità e le finalità del trattamento dei dati personali da parte dell'App e dello Sviluppatore.</p>
 
@@ -55,6 +55,7 @@ Contatto Email: <a href="mailto:agostino.giorgio@poliba.it">agostino.giorgio@pol
   <li><strong>Avvio automatico di telefonate</strong> a uno o due numeri impostati.</li>
 </ul>
 <p><strong>Conto alla rovescia e annullo:</strong> quando l'emergenza è attivata tramite <strong>voce</strong> o <strong>complication</strong>, parte un conto alla rovescia di <strong>3 secondi</strong> (con vibrazione) entro il quale è possibile <strong>annullare</strong> l'invio, toccando il pulsante (diventato giallo "ANNULLA") o pronunciando "cancella" (anche "annulla"/"stop"). Il pulsante "Invio" toccato manualmente, invece, invia immediatamente.</p>
+<p><strong>Assenza di rete e ripresa automatica:</strong> se al momento dell'emergenza la connessione non è disponibile, il messaggio di allerta Telegram viene conservato temporaneamente <strong>solo sul dispositivo</strong> (mai presso lo Sviluppatore o terze parti) e inviato automaticamente non appena la rete torna disponibile, per un massimo di 15 minuti, trascorsi i quali viene eliminato. Analogamente, se il sistema operativo interrompe l'App durante un'emergenza in corso (es. riavvio dell'orologio, ottimizzazioni di sistema), l'App riprende automaticamente la condivisione della posizione live fino alla scadenza prevista. In entrambi i casi l'azione <strong>"Termina invio"</strong> sulla notifica annulla immediatamente ogni invio residuo o programmato.</p>
 <p>Per impostazione predefinita l'App acquisisce la <strong>geolocalizzazione</strong> (coordinate GPS dell'orologio) al momento dell'emergenza e, nel solo caso di invio Telegram, la aggiorna in tempo reale per i successivi 60 minuti.</p>
 <ul>
   <li><strong>Finalità</strong>: consentire ai contatti di emergenza di seguire gli spostamenti dell'utente in difficoltà durante l'emergenza.</li>
@@ -74,11 +75,13 @@ Contatto Email: <a href="mailto:agostino.giorgio@poliba.it">agostino.giorgio@pol
 <ul>
   <li><strong>Microfono</strong>: rilevamento locale della sola keyword "aiutami", anche in background. Nessuna registrazione audio.</li>
   <li><strong>Posizione Esatta</strong>: acquisizione delle coordinate GPS al momento dell'emergenza (anche con App non in primo piano) e, in caso di invio Telegram, aggiornamento in tempo reale per max 60 minuti.</li>
+  <li><strong>Posizione in background ("Consenti sempre")</strong>: richiesta separatamente dopo la posizione esatta, serve <strong>esclusivamente</strong> a riprendere in automatico la condivisione della posizione live qualora il sistema interrompa e riavvii l'App <strong>durante un'emergenza già in corso</strong> (es. riavvio dell'orologio, gestione energetica). La posizione <strong>non viene mai acquisita né trasmessa al di fuori di un'emergenza attiva</strong>: in assenza di emergenza il GPS resta spento.</li>
   <li><strong>Invio SMS e Gestione Telefonate</strong>: invio autonomo di SMS e/o avvio di chiamate ai contatti al momento dell'emergenza. Su orologi senza SIM, gli SMS non sono disponibili e la chiamata può essere instradata tramite il telefono accoppiato.</li>
   <li><strong>Servizio in primo piano (microfono e posizione)</strong>: mantiene attivi l'ascolto della keyword e l'acquisizione della posizione durante la protezione e l'emergenza.</li>
   <li><strong>Notifiche (Android 13+)</strong>: mostra lo stato del servizio e le notifiche operative dell'emergenza (incluso "Termina invio").</li>
   <li><strong>Avvio automatico al riavvio</strong>: ripristina la protezione dopo il riavvio dell'orologio.</li>
   <li><strong>Esenzione dall'ottimizzazione batteria / attività in background</strong>: evita che il sistema chiuda l'App durante il funzionamento prolungato a schermo spento. <em>Nota Wear OS</em>: su molti smartwatch questa impostazione non è modificabile dall'orologio, ma va attivata dal telefono (es. Galaxy Wearable → App → AIuto SOS → "Consenti attività in background").</li>
+  <li><strong>Esclusione dalla rimozione automatica dei permessi</strong>: al primo avvio l'App propone di disattivare la funzione di Android che revoca automaticamente i permessi alle app non utilizzate per lunghi periodi. Per un'app di emergenza — che per sua natura può restare a lungo inutilizzata — questa esclusione garantisce che la protezione resti operativa nel tempo. La scelta è dell'utente e non comporta alcuna raccolta di dati.</li>
 </ul>
 <p><strong>Utilizzo degli SMS.</strong> L'App usa la funzione SMS del dispositivo per due scopi, entrambi avviati esplicitamente da te:</p>
 <ul>
